@@ -1,0 +1,19 @@
+{
+  "training_source_sha256": "cf4014eccff9578e912f174bf1333baab238cc111bb3ca18ba0c58a421576d6c",
+  "logging_source_sha256": "6c878391bb0b84bca6716598097fdc6413b4e6e1613671565f839ab9dfc30cd1",
+  "reason": "Compatible implementation revision: terminal output, completed-run replay and documentation changes only; fitting, selection criteria, grids and folds unchanged.",
+  "unchanged_functions": [
+    "splits",
+    "transform_fit",
+    "transform",
+    "predict",
+    "config",
+    "gap",
+    "sparse_path",
+    "coefficients",
+    "fit",
+    "winner",
+    "plot",
+    "check"
+  ]
+}

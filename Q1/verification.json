@@ -1,0 +1,10 @@
+{
+  "completed_degree_searches": 60,
+  "candidate_configurations": 1440,
+  "inner_candidate_fits": 4320,
+  "nonconvergent_inner_fits": 329,
+  "prediction_rows": 1000,
+  "model_reload_matches": true,
+  "data_hashes_match": true,
+  "fold_isolation_verified": true
+}

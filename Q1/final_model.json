@@ -1,0 +1,13 @@
+{
+  "config": {
+    "degree": 5,
+    "family": "lasso",
+    "alpha": 0.01,
+    "l1_ratio": 1.0
+  },
+  "selection_mse": 0.33602651746198703,
+  "training_mse": 0.22910368949405563,
+  "terms": 461,
+  "nonzero": 120,
+  "prediction_rows": 1000
+}

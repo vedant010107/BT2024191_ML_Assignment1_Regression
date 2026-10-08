@@ -1,0 +1,83 @@
+{
+  "pooled_mse": 0.315281336376052,
+  "pooled_r2": 0.9701344546844844,
+  "mean_fold_mse": 0.31528133637605193,
+  "fold_mse_sd": 0.05200428475586138,
+  "folds": [
+    {
+      "fold": 1,
+      "config": {
+        "degree": 5,
+        "family": "lasso",
+        "alpha": 0.01,
+        "l1_ratio": 1.0
+      },
+      "inner_mse": 0.34820155429765504,
+      "training_mse": 0.21680122652952064,
+      "mse": 0.3214454807478245,
+      "r2": 0.9720826399109079,
+      "train_rows": 800,
+      "validation_rows": 200
+    },
+    {
+      "fold": 2,
+      "config": {
+        "degree": 5,
+        "family": "lasso",
+        "alpha": 0.01,
+        "l1_ratio": 1.0
+      },
+      "inner_mse": 0.37373559662353945,
+      "training_mse": 0.22160292037795146,
+      "mse": 0.2665245253127287,
+      "r2": 0.9734611000070944,
+      "train_rows": 800,
+      "validation_rows": 200
+    },
+    {
+      "fold": 3,
+      "config": {
+        "degree": 5,
+        "family": "lasso",
+        "alpha": 0.01,
+        "l1_ratio": 1.0
+      },
+      "inner_mse": 0.34847497614449646,
+      "training_mse": 0.2168394866787836,
+      "mse": 0.3208010170907481,
+      "r2": 0.9647204415133167,
+      "train_rows": 800,
+      "validation_rows": 200
+    },
+    {
+      "fold": 4,
+      "config": {
+        "degree": 5,
+        "family": "lasso",
+        "alpha": 0.01,
+        "l1_ratio": 1.0
+      },
+      "inner_mse": 0.3222583665921219,
+      "training_mse": 0.2098433560501814,
+      "mse": 0.3958052845919767,
+      "r2": 0.9683356387817176,
+      "train_rows": 800,
+      "validation_rows": 200
+    },
+    {
+      "fold": 5,
+      "config": {
+        "degree": 5,
+        "family": "lasso",
+        "alpha": 0.01,
+        "l1_ratio": 1.0
+      },
+      "inner_mse": 0.3811438815450103,
+      "training_mse": 0.22249860249876327,
+      "mse": 0.27183037413698197,
+      "r2": 0.9714957659419247,
+      "train_rows": 800,
+      "validation_rows": 200
+    }
+  ]
+}

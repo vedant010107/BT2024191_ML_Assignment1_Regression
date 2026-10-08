@@ -1,0 +1,15 @@
+{
+  "fold": 2,
+  "config": {
+    "degree": 5,
+    "family": "lasso",
+    "alpha": 0.01,
+    "l1_ratio": 1.0
+  },
+  "inner_mse": 0.37373559662353945,
+  "training_mse": 0.22160292037795146,
+  "mse": 0.2665245253127287,
+  "r2": 0.9734611000070944,
+  "train_rows": 800,
+  "validation_rows": 200
+}
