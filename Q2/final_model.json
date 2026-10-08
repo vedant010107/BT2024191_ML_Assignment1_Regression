@@ -1,0 +1,13 @@
+{
+  "config": {
+    "degree": 10,
+    "family": "ridge",
+    "alpha": 1.0,
+    "l1_ratio": 0.0
+  },
+  "selection_mse": 0.283795432655085,
+  "training_mse": 0.1802404298114907,
+  "terms": 285,
+  "nonzero": 285,
+  "prediction_rows": 1000
+}

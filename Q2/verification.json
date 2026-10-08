@@ -1,0 +1,15 @@
+{
+  "completed_degree_searches": 120,
+  "screening_candidate_configurations": 2880,
+  "screening_inner_fits": 8640,
+  "repeated_inner_fits": 360,
+  "nonconvergent_screening_fits": 933,
+  "nonconvergent_repeated_fits": 11,
+  "prediction_rows": 1000,
+  "model_reload_matches": true,
+  "data_hashes_match": true,
+  "outer_fold_coverage_verified": true,
+  "inner_split_checks": 65,
+  "duplicate_group_isolation_verified": true,
+  "q1_outputs_unchanged": true
+}

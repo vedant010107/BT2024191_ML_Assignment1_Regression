@@ -1,0 +1,41 @@
+{
+  "question": 2,
+  "max_degree": 20,
+  "outer_folds": 5,
+  "inner_folds": 3,
+  "outer_seed": 43,
+  "inner_seed": 42,
+  "ridge_alphas": [
+    0.0001,
+    0.001,
+    0.01,
+    0.1,
+    1.0,
+    10.0,
+    100.0,
+    1000.0
+  ],
+  "sparse_alphas": [
+    1.0,
+    0.1,
+    0.01,
+    0.001
+  ],
+  "l1_ratios": [
+    0.2,
+    0.5,
+    0.8
+  ],
+  "tolerance": 0.0001,
+  "train_sha256": "36ea2e2859b536dc12ddd79dde63773143ea88c12be8e963082860406579ca3c",
+  "test_sha256": "d73270756526ad004f9c9a6679e9d4c2e2ededdd9213d0f3d0e67e73ec02f463",
+  "code_sha256": "cf4014eccff9578e912f174bf1333baab238cc111bb3ca18ba0c58a421576d6c",
+  "versions": {
+    "numpy": "2.5.3",
+    "scipy": "1.18.1",
+    "sklearn": "1.9.1",
+    "skglm": "0.5",
+    "pandas": "3.0.6",
+    "joblib": "1.6.0"
+  }
+}
