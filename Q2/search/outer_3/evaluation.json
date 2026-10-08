@@ -1,0 +1,15 @@
+{
+  "fold": 3,
+  "config": {
+    "degree": 10,
+    "family": "ridge",
+    "alpha": 1.0,
+    "l1_ratio": 0.0
+  },
+  "inner_mse": 0.3361075679846738,
+  "training_mse": 0.1858670743258149,
+  "mse": 0.21718682773382078,
+  "r2": 0.9950469401029159,
+  "train_rows": 801,
+  "validation_rows": 199
+}
