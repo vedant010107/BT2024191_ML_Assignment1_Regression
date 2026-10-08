@@ -1,0 +1,15 @@
+{
+  "fold": 4,
+  "config": {
+    "degree": 10,
+    "family": "elastic_net",
+    "alpha": 0.001,
+    "l1_ratio": 0.5
+  },
+  "inner_mse": 0.32771757236255805,
+  "training_mse": 0.17570148641726868,
+  "mse": 0.3064899786177045,
+  "r2": 0.9942231206069795,
+  "train_rows": 799,
+  "validation_rows": 201
+}
