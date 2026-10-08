@@ -1,0 +1,323 @@
+
+==============================================================================
+QUESTION 1: POLYNOMIAL REGRESSION
+==============================================================================
+Training rows=1000; test rows=1000; inputs=6; degrees=1..10
+Models: Ridge, Lasso, Elastic Net | 24 configurations per degree
+Outer CV: 5 grouped folds | Inner screening: 3 grouped folds
+
+Outer fold 1/5 | training=800, held out=200
+  degree  1: best inner MSE=9.222333613, invalid candidates=0/24; {'degree': 1, 'family': 'elastic_net', 'alpha': 0.1, 'l1_ratio': 0.2} [cached]
+  degree  2: best inner MSE=3.471343354, invalid candidates=0/24; {'degree': 2, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  3: best inner MSE=1.101805050, invalid candidates=0/24; {'degree': 3, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  4: best inner MSE=0.684880363, invalid candidates=0/24; {'degree': 4, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  5: best inner MSE=0.348201554, invalid candidates=0/24; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  6: best inner MSE=0.378145440, invalid candidates=2/24; {'degree': 6, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  7: best inner MSE=0.395405346, invalid candidates=5/24; {'degree': 7, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  8: best inner MSE=0.400997400, invalid candidates=5/24; {'degree': 8, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  9: best inner MSE=0.414584497, invalid candidates=5/24; {'degree': 9, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree 10: best inner MSE=0.437038477, invalid candidates=7/24; {'degree': 10, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  outer MSE=0.321445481, R2=0.972082640; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0}
+
+Outer fold 2/5 | training=800, held out=200
+  degree  1: best inner MSE=9.445928233, invalid candidates=0/24; {'degree': 1, 'family': 'elastic_net', 'alpha': 0.1, 'l1_ratio': 0.5} [cached]
+  degree  2: best inner MSE=3.432796163, invalid candidates=0/24; {'degree': 2, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  3: best inner MSE=1.094707946, invalid candidates=0/24; {'degree': 3, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  4: best inner MSE=0.700875478, invalid candidates=0/24; {'degree': 4, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  5: best inner MSE=0.373735597, invalid candidates=0/24; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  6: best inner MSE=0.385954565, invalid candidates=0/24; {'degree': 6, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  7: best inner MSE=0.410871984, invalid candidates=3/24; {'degree': 7, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  8: best inner MSE=0.417603340, invalid candidates=5/24; {'degree': 8, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  9: best inner MSE=0.427521400, invalid candidates=6/24; {'degree': 9, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree 10: best inner MSE=0.460684997, invalid candidates=6/24; {'degree': 10, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  outer MSE=0.266524525, R2=0.973461100; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0}
+
+Outer fold 3/5 | training=800, held out=200
+  degree  1: best inner MSE=9.532223570, invalid candidates=0/24; {'degree': 1, 'family': 'elastic_net', 'alpha': 0.1, 'l1_ratio': 0.8} [cached]
+  degree  2: best inner MSE=3.246214315, invalid candidates=1/24; {'degree': 2, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  3: best inner MSE=1.051925642, invalid candidates=0/24; {'degree': 3, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  4: best inner MSE=0.720483925, invalid candidates=0/24; {'degree': 4, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  5: best inner MSE=0.348474976, invalid candidates=0/24; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  6: best inner MSE=0.367728593, invalid candidates=1/24; {'degree': 6, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  7: best inner MSE=0.365003458, invalid candidates=4/24; {'degree': 7, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  8: best inner MSE=0.378626908, invalid candidates=5/24; {'degree': 8, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  9: best inner MSE=0.385358838, invalid candidates=5/24; {'degree': 9, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree 10: best inner MSE=0.383857880, invalid candidates=5/24; {'degree': 10, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  outer MSE=0.320801017, R2=0.964720442; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0}
+
+Outer fold 4/5 | training=800, held out=200
+  degree  1: best inner MSE=8.625627064, invalid candidates=0/24; {'degree': 1, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  2: best inner MSE=3.072283194, invalid candidates=0/24; {'degree': 2, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree  3: best inner MSE=1.025903686, invalid candidates=0/24; {'degree': 3, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  4: best inner MSE=0.685035890, invalid candidates=0/24; {'degree': 4, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  5: best inner MSE=0.322258367, invalid candidates=0/24; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  6: best inner MSE=0.338492698, invalid candidates=1/24; {'degree': 6, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  7: best inner MSE=0.344224665, invalid candidates=4/24; {'degree': 7, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  8: best inner MSE=0.375703547, invalid candidates=6/24; {'degree': 8, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  degree  9: best inner MSE=0.377038451, invalid candidates=7/24; {'degree': 9, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  degree 10: best inner MSE=0.393938049, invalid candidates=7/24; {'degree': 10, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  outer MSE=0.395805285, R2=0.968335639; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0}
+
+Outer fold 5/5 | training=800, held out=200
+  degree  1: best inner MSE=9.646940084, invalid candidates=0/24; {'degree': 1, 'family': 'ridge', 'alpha': 100.0, 'l1_ratio': 0.0} [cached]
+  degree  2: best inner MSE=3.305370676, invalid candidates=1/24; {'degree': 2, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.5} [cached]
+  degree  3: best inner MSE=1.030536449, invalid candidates=0/24; {'degree': 3, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  degree  4: best inner MSE=0.740695629, invalid candidates=0/24; {'degree': 4, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  5: best inner MSE=0.381143882, invalid candidates=0/24; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  6: best inner MSE=0.387259025, invalid candidates=2/24; {'degree': 6, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  7: best inner MSE=0.394277200, invalid candidates=4/24; {'degree': 7, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  8: best inner MSE=0.392917515, invalid candidates=5/24; {'degree': 8, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  9: best inner MSE=0.422721824, invalid candidates=7/24; {'degree': 9, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  degree 10: best inner MSE=0.425477128, invalid candidates=7/24; {'degree': 10, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  outer MSE=0.271830374, R2=0.971495766; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0}
+
+Final selection on all training rows (outer scores are not used to select).
+  degree  1: best inner MSE=9.257130013, invalid candidates=0/24; {'degree': 1, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree  2: best inner MSE=3.322136380, invalid candidates=0/24; {'degree': 2, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  3: best inner MSE=1.073117976, invalid candidates=0/24; {'degree': 3, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  degree  4: best inner MSE=0.685051002, invalid candidates=0/24; {'degree': 4, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  5: best inner MSE=0.336026517, invalid candidates=0/24; {'degree': 5, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  6: best inner MSE=0.341312727, invalid candidates=1/24; {'degree': 6, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  7: best inner MSE=0.347564326, invalid candidates=4/24; {'degree': 7, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  8: best inner MSE=0.353157203, invalid candidates=5/24; {'degree': 8, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  degree  9: best inner MSE=0.366585313, invalid candidates=7/24; {'degree': 9, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  degree 10: best inner MSE=0.368097092, invalid candidates=5/24; {'degree': 10, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0} [cached]
+  Verification passed: 1000 finite predictions, model reload, training MSE and pooled CV metrics.
+
+FINAL SUMMARY
+{
+  "problem": 1,
+  "selected": {
+    "degree": 5,
+    "family": "lasso",
+    "alpha": 0.01,
+    "l1_ratio": 1.0
+  },
+  "final_selection_cv_mse": 0.33602651746198703,
+  "training_mse": 0.22910368949405563,
+  "pooled_outer_mse": 0.315281336376052,
+  "pooled_outer_r2": 0.9701344546844844,
+  "mean_outer_mse": 0.31528133637605193,
+  "outer_mse_sd": 0.05200428475586138,
+  "terms": 461,
+  "nonzero_coefficients": 120,
+  "training_rows": 1000,
+  "test_rows": 1000,
+  "prediction_file": "D:\\OneDrive - iiit-b\\SEM 5\\ML\\Project\\Q1\\BT2024191_pred_var1.csv",
+  "model_file": "D:\\OneDrive - iiit-b\\SEM 5\\ML\\Project\\Q1\\model.joblib",
+  "degree_plot": "D:\\OneDrive - iiit-b\\SEM 5\\ML\\Project\\Q1\\images\\degree_mse.png",
+  "note": "Final-selection CV MSE is a selection score. Outer-CV scores estimate the selection procedure."
+}
+
+==============================================================================
+QUESTION 2: POLYNOMIAL REGRESSION
+==============================================================================
+Training rows=1000; test rows=1000; inputs=3; degrees=1..20
+Models: Ridge, Lasso, Elastic Net | 24 configurations per degree
+Outer CV: 5 grouped folds | Inner screening: 3 grouped folds
+Q2 selection: fixed shortlist, then 5 inner folds repeated twice
+
+Outer fold 1/5 | training=800, held out=200
+  degree  1: best inner MSE=33.036671609, invalid candidates=0/24; {'degree': 1, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.2} [cached]
+  degree  2: best inner MSE=20.864802960, invalid candidates=0/24; {'degree': 2, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree  3: best inner MSE=11.478763786, invalid candidates=0/24; {'degree': 3, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  4: best inner MSE=4.246451444, invalid candidates=0/24; {'degree': 4, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  5: best inner MSE=1.511616256, invalid candidates=0/24; {'degree': 5, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  6: best inner MSE=0.810586496, invalid candidates=0/24; {'degree': 6, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  7: best inner MSE=0.539237198, invalid candidates=0/24; {'degree': 7, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.2} [cached]
+  degree  8: best inner MSE=0.436007977, invalid candidates=0/24; {'degree': 8, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  9: best inner MSE=0.527456700, invalid candidates=0/24; {'degree': 9, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.5} [cached]
+  degree 10: best inner MSE=0.446526179, invalid candidates=4/24; {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 11: best inner MSE=0.525176978, invalid candidates=4/24; {'degree': 11, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.8} [cached]
+  degree 12: best inner MSE=0.485193846, invalid candidates=6/24; {'degree': 12, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 13: best inner MSE=0.527491555, invalid candidates=4/24; {'degree': 13, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.5} [cached]
+  degree 14: best inner MSE=0.558024335, invalid candidates=6/24; {'degree': 14, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 15: best inner MSE=0.800061652, invalid candidates=8/24; {'degree': 15, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 16: best inner MSE=0.642328485, invalid candidates=8/24; {'degree': 16, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 17: best inner MSE=0.847739689, invalid candidates=9/24; {'degree': 17, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 18: best inner MSE=0.727897736, invalid candidates=9/24; {'degree': 18, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 19: best inner MSE=0.897753229, invalid candidates=9/24; {'degree': 19, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 20: best inner MSE=0.841074499, invalid candidates=9/24; {'degree': 20, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  Repeated inner validation: 5 folds x 2 repeats on the fixed shortlist [cached]
+    {'degree': 8, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0}: mean MSE=0.322347336; failed fits=0/10
+    {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}: mean MSE=0.296375682; failed fits=0/10
+    {'degree': 8, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=excluded; failed fits=1/10
+    {'degree': 9, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=0.332258518; failed fits=0/10
+    {'degree': 8, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.2}: mean MSE=0.354636538; failed fits=0/10
+    {'degree': 10, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.8}: mean MSE=0.310932761; failed fits=0/10
+  outer MSE=0.306633193, R2=0.992096446; {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}
+
+Outer fold 2/5 | training=799, held out=201
+  degree  1: best inner MSE=31.565710195, invalid candidates=0/24; {'degree': 1, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree  2: best inner MSE=19.841252832, invalid candidates=0/24; {'degree': 2, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree  3: best inner MSE=10.883969004, invalid candidates=0/24; {'degree': 3, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  4: best inner MSE=3.942237983, invalid candidates=0/24; {'degree': 4, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree  5: best inner MSE=1.749667650, invalid candidates=0/24; {'degree': 5, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.2} [cached]
+  degree  6: best inner MSE=1.007841504, invalid candidates=0/24; {'degree': 6, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree  7: best inner MSE=0.808250613, invalid candidates=0/24; {'degree': 7, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  8: best inner MSE=0.689971135, invalid candidates=0/24; {'degree': 8, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.2} [cached]
+  degree  9: best inner MSE=0.655826159, invalid candidates=0/24; {'degree': 9, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree 10: best inner MSE=0.758605146, invalid candidates=3/24; {'degree': 10, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 11: best inner MSE=0.741366701, invalid candidates=4/24; {'degree': 11, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 12: best inner MSE=0.860876303, invalid candidates=4/24; {'degree': 12, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 13: best inner MSE=0.815882591, invalid candidates=5/24; {'degree': 13, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 14: best inner MSE=0.920087308, invalid candidates=7/24; {'degree': 14, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  degree 15: best inner MSE=0.951177923, invalid candidates=8/24; {'degree': 15, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 16: best inner MSE=0.954244285, invalid candidates=7/24; {'degree': 16, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.8} [cached]
+  degree 17: best inner MSE=1.192193700, invalid candidates=8/24; {'degree': 17, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 18: best inner MSE=1.459505727, invalid candidates=8/24; {'degree': 18, 'family': 'elastic_net', 'alpha': 0.1, 'l1_ratio': 0.2} [cached]
+  degree 19: best inner MSE=1.460368061, invalid candidates=8/24; {'degree': 19, 'family': 'elastic_net', 'alpha': 0.1, 'l1_ratio': 0.2} [cached]
+  degree 20: best inner MSE=1.422262153, invalid candidates=8/24; {'degree': 20, 'family': 'elastic_net', 'alpha': 0.1, 'l1_ratio': 0.2} [cached]
+  Repeated inner validation: 5 folds x 2 repeats on the fixed shortlist [cached]
+    {'degree': 9, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0}: mean MSE=0.464446942; failed fits=0/10
+    {'degree': 11, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0}: mean MSE=0.451027788; failed fits=0/10
+    {'degree': 8, 'family': 'lasso', 'alpha': 0.01, 'l1_ratio': 1.0}: mean MSE=0.579998130; failed fits=0/10
+    {'degree': 9, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=0.408317646; failed fits=0/10
+    {'degree': 8, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.2}: mean MSE=0.544501867; failed fits=0/10
+    {'degree': 9, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.2}: mean MSE=0.469730494; failed fits=0/10
+  outer MSE=0.438270698, R2=0.991636641; {'degree': 9, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}
+
+Outer fold 3/5 | training=801, held out=199
+  degree  1: best inner MSE=34.198189503, invalid candidates=0/24; {'degree': 1, 'family': 'elastic_net', 'alpha': 0.1, 'l1_ratio': 0.2} [cached]
+  degree  2: best inner MSE=21.693561710, invalid candidates=0/24; {'degree': 2, 'family': 'elastic_net', 'alpha': 0.1, 'l1_ratio': 0.5} [cached]
+  degree  3: best inner MSE=12.882871900, invalid candidates=0/24; {'degree': 3, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree  4: best inner MSE=4.380087691, invalid candidates=0/24; {'degree': 4, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  5: best inner MSE=1.755009544, invalid candidates=0/24; {'degree': 5, 'family': 'ridge', 'alpha': 0.01, 'l1_ratio': 0.0} [cached]
+  degree  6: best inner MSE=0.716933890, invalid candidates=0/24; {'degree': 6, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  7: best inner MSE=0.432004514, invalid candidates=0/24; {'degree': 7, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  8: best inner MSE=0.391793394, invalid candidates=0/24; {'degree': 8, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.2} [cached]
+  degree  9: best inner MSE=0.367412575, invalid candidates=1/24; {'degree': 9, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.5} [cached]
+  degree 10: best inner MSE=0.369106348, invalid candidates=2/24; {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 11: best inner MSE=0.437289736, invalid candidates=5/24; {'degree': 11, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 12: best inner MSE=0.471519215, invalid candidates=5/24; {'degree': 12, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 13: best inner MSE=0.594115355, invalid candidates=5/24; {'degree': 13, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 14: best inner MSE=0.622505282, invalid candidates=7/24; {'degree': 14, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 15: best inner MSE=0.800203806, invalid candidates=9/24; {'degree': 15, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 16: best inner MSE=0.832144560, invalid candidates=9/24; {'degree': 16, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 17: best inner MSE=1.033258470, invalid candidates=9/24; {'degree': 17, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 18: best inner MSE=1.073409761, invalid candidates=8/24; {'degree': 18, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 19: best inner MSE=1.267793133, invalid candidates=10/24; {'degree': 19, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 20: best inner MSE=1.329279870, invalid candidates=9/24; {'degree': 20, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  Repeated inner validation: 5 folds x 2 repeats on the fixed shortlist [cached]
+    {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}: mean MSE=0.336107568; failed fits=0/10
+    {'degree': 9, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}: mean MSE=0.344481041; failed fits=0/10
+    {'degree': 9, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=excluded; failed fits=1/10
+    {'degree': 8, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=0.438138329; failed fits=0/10
+    {'degree': 9, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.5}: mean MSE=0.352476502; failed fits=0/10
+    {'degree': 10, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.8}: mean MSE=0.350303578; failed fits=0/10
+  outer MSE=0.217186828, R2=0.995046940; {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}
+
+Outer fold 4/5 | training=799, held out=201
+  degree  1: best inner MSE=31.523980741, invalid candidates=0/24; {'degree': 1, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree  2: best inner MSE=18.299817769, invalid candidates=0/24; {'degree': 2, 'family': 'lasso', 'alpha': 0.1, 'l1_ratio': 1.0} [cached]
+  degree  3: best inner MSE=10.330041666, invalid candidates=0/24; {'degree': 3, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  4: best inner MSE=3.396162130, invalid candidates=0/24; {'degree': 4, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  5: best inner MSE=1.592902347, invalid candidates=0/24; {'degree': 5, 'family': 'ridge', 'alpha': 0.001, 'l1_ratio': 0.0} [cached]
+  degree  6: best inner MSE=0.677156101, invalid candidates=0/24; {'degree': 6, 'family': 'ridge', 'alpha': 0.01, 'l1_ratio': 0.0} [cached]
+  degree  7: best inner MSE=0.449443496, invalid candidates=0/24; {'degree': 7, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  8: best inner MSE=0.364376303, invalid candidates=0/24; {'degree': 8, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  9: best inner MSE=0.348570733, invalid candidates=0/24; {'degree': 9, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.2} [cached]
+  degree 10: best inner MSE=0.317180602, invalid candidates=2/24; {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 11: best inner MSE=0.311460162, invalid candidates=2/24; {'degree': 11, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 12: best inner MSE=0.300802727, invalid candidates=5/24; {'degree': 12, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 13: best inner MSE=0.299951670, invalid candidates=4/24; {'degree': 13, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 14: best inner MSE=0.298725297, invalid candidates=7/24; {'degree': 14, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 15: best inner MSE=0.306553821, invalid candidates=8/24; {'degree': 15, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 16: best inner MSE=0.316100625, invalid candidates=8/24; {'degree': 16, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 17: best inner MSE=0.343799758, invalid candidates=7/24; {'degree': 17, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 18: best inner MSE=0.341228794, invalid candidates=8/24; {'degree': 18, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 19: best inner MSE=0.352447108, invalid candidates=8/24; {'degree': 19, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  degree 20: best inner MSE=0.348708619, invalid candidates=8/24; {'degree': 20, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  Repeated inner validation: 5 folds x 2 repeats on the fixed shortlist [cached]
+    {'degree': 14, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}: mean MSE=0.399032176; failed fits=0/10
+    {'degree': 13, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}: mean MSE=0.375657068; failed fits=0/10
+    {'degree': 9, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=0.372993057; failed fits=0/10
+    {'degree': 8, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=0.388979864; failed fits=0/10
+    {'degree': 13, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.5}: mean MSE=excluded; failed fits=2/10
+    {'degree': 10, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.5}: mean MSE=0.327717572; failed fits=0/10
+  outer MSE=0.306489979, R2=0.994223121; {'degree': 10, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.5}
+
+Outer fold 5/5 | training=801, held out=199
+  degree  1: best inner MSE=34.791804997, invalid candidates=0/24; {'degree': 1, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.2} [cached]
+  degree  2: best inner MSE=20.687489131, invalid candidates=0/24; {'degree': 2, 'family': 'lasso', 'alpha': 0.1, 'l1_ratio': 1.0} [cached]
+  degree  3: best inner MSE=11.436269772, invalid candidates=0/24; {'degree': 3, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  4: best inner MSE=3.755417480, invalid candidates=0/24; {'degree': 4, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0} [cached]
+  degree  5: best inner MSE=1.494172690, invalid candidates=0/24; {'degree': 5, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  6: best inner MSE=0.717653960, invalid candidates=0/24; {'degree': 6, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  7: best inner MSE=0.433736872, invalid candidates=0/24; {'degree': 7, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  8: best inner MSE=0.391838363, invalid candidates=0/24; {'degree': 8, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  9: best inner MSE=0.344477963, invalid candidates=2/24; {'degree': 9, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 10: best inner MSE=0.346201793, invalid candidates=4/24; {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 11: best inner MSE=0.329869317, invalid candidates=3/24; {'degree': 11, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.8} [cached]
+  degree 12: best inner MSE=0.359512450, invalid candidates=5/24; {'degree': 12, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 13: best inner MSE=0.359563363, invalid candidates=4/24; {'degree': 13, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 14: best inner MSE=0.381624698, invalid candidates=8/24; {'degree': 14, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.2} [cached]
+  degree 15: best inner MSE=0.395225758, invalid candidates=8/24; {'degree': 15, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 16: best inner MSE=0.418532798, invalid candidates=8/24; {'degree': 16, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 17: best inner MSE=0.442385851, invalid candidates=9/24; {'degree': 17, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 18: best inner MSE=0.469752657, invalid candidates=9/24; {'degree': 18, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 19: best inner MSE=0.514482741, invalid candidates=8/24; {'degree': 19, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 20: best inner MSE=0.551777776, invalid candidates=9/24; {'degree': 20, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  Repeated inner validation: 5 folds x 2 repeats on the fixed shortlist [cached]
+    {'degree': 11, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}: mean MSE=0.330785869; failed fits=0/10
+    {'degree': 9, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}: mean MSE=0.361052082; failed fits=0/10
+    {'degree': 11, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=0.351786809; failed fits=0/10
+    {'degree': 9, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=excluded; failed fits=1/10
+    {'degree': 11, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.8}: mean MSE=excluded; failed fits=1/10
+    {'degree': 9, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.5}: mean MSE=0.361120836; failed fits=0/10
+  outer MSE=0.270628303, R2=0.991709516; {'degree': 11, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}
+
+Final selection on all training rows (outer scores are not used to select).
+  degree  1: best inner MSE=32.861468350, invalid candidates=0/24; {'degree': 1, 'family': 'elastic_net', 'alpha': 0.01, 'l1_ratio': 0.2} [cached]
+  degree  2: best inner MSE=19.598551571, invalid candidates=0/24; {'degree': 2, 'family': 'lasso', 'alpha': 0.1, 'l1_ratio': 1.0} [cached]
+  degree  3: best inner MSE=10.697154393, invalid candidates=0/24; {'degree': 3, 'family': 'ridge', 'alpha': 0.0001, 'l1_ratio': 0.0} [cached]
+  degree  4: best inner MSE=3.411194634, invalid candidates=0/24; {'degree': 4, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  5: best inner MSE=1.427548360, invalid candidates=0/24; {'degree': 5, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0} [cached]
+  degree  6: best inner MSE=0.707017321, invalid candidates=0/24; {'degree': 6, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  7: best inner MSE=0.459327534, invalid candidates=0/24; {'degree': 7, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  8: best inner MSE=0.396304050, invalid candidates=0/24; {'degree': 8, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree  9: best inner MSE=0.393312818, invalid candidates=0/24; {'degree': 9, 'family': 'ridge', 'alpha': 0.001, 'l1_ratio': 0.0} [cached]
+  degree 10: best inner MSE=0.389659338, invalid candidates=0/24; {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 11: best inner MSE=0.434246248, invalid candidates=1/24; {'degree': 11, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree 12: best inner MSE=0.434622615, invalid candidates=5/24; {'degree': 12, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.8} [cached]
+  degree 13: best inner MSE=0.455635231, invalid candidates=6/24; {'degree': 13, 'family': 'ridge', 'alpha': 0.1, 'l1_ratio': 0.0} [cached]
+  degree 14: best inner MSE=0.553621792, invalid candidates=7/24; {'degree': 14, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 15: best inner MSE=0.615135019, invalid candidates=8/24; {'degree': 15, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 16: best inner MSE=0.679176318, invalid candidates=7/24; {'degree': 16, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 17: best inner MSE=0.707313786, invalid candidates=8/24; {'degree': 17, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 18: best inner MSE=0.863024234, invalid candidates=9/24; {'degree': 18, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 19: best inner MSE=0.870923238, invalid candidates=8/24; {'degree': 19, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0} [cached]
+  degree 20: best inner MSE=1.125563601, invalid candidates=9/24; {'degree': 20, 'family': 'ridge', 'alpha': 10.0, 'l1_ratio': 0.0} [cached]
+  Repeated inner validation: 5 folds x 2 repeats on the fixed shortlist [cached]
+    {'degree': 10, 'family': 'ridge', 'alpha': 1.0, 'l1_ratio': 0.0}: mean MSE=0.283795433; failed fits=0/10
+    {'degree': 9, 'family': 'ridge', 'alpha': 0.001, 'l1_ratio': 0.0}: mean MSE=0.333535184; failed fits=0/10
+    {'degree': 8, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=0.361019633; failed fits=0/10
+    {'degree': 10, 'family': 'lasso', 'alpha': 0.001, 'l1_ratio': 1.0}: mean MSE=excluded; failed fits=3/10
+    {'degree': 10, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.2}: mean MSE=excluded; failed fits=2/10
+    {'degree': 8, 'family': 'elastic_net', 'alpha': 0.001, 'l1_ratio': 0.2}: mean MSE=0.331650369; failed fits=0/10
+  Verification passed: 1000 finite predictions, model reload, training MSE and pooled CV metrics.
+
+FINAL SUMMARY
+{
+  "problem": 2,
+  "selected": {
+    "degree": 10,
+    "family": "ridge",
+    "alpha": 1.0,
+    "l1_ratio": 0.0
+  },
+  "final_selection_cv_mse": 0.283795432655085,
+  "training_mse": 0.1802404298114907,
+  "pooled_outer_mse": 0.3080987455746316,
+  "pooled_outer_r2": 0.9930636866097681,
+  "mean_outer_mse": 0.3078418000279445,
+  "outer_mse_sd": 0.08157535486959226,
+  "terms": 285,
+  "nonzero_coefficients": 285,
+  "training_rows": 1000,
+  "test_rows": 1000,
+  "prediction_file": "D:\\OneDrive - iiit-b\\SEM 5\\ML\\Project\\Q2\\BT2024191_pred_var2.csv",
+  "model_file": "D:\\OneDrive - iiit-b\\SEM 5\\ML\\Project\\Q2\\model.joblib",
+  "degree_plot": "D:\\OneDrive - iiit-b\\SEM 5\\ML\\Project\\Q2\\images\\degree_mse.png",
+  "note": "Final-selection CV MSE is a selection score. Outer-CV scores estimate the selection procedure."
+}
